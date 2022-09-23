@@ -1,0 +1,40 @@
+/*Header*/
+header{
+    background-color: #000000;
+}
+
+#navbarSupportedContent{
+    flex-grow: 0;
+}
+/*Dim Header*/
+
+/*Body*/
+.Destaques{
+    background-color: #eeeeee;
+}
+#colorRed{
+    color:red;
+}
+
+.col-12 > h1{
+    text-align: center;
+}
+
+.Publishers{
+    background-color: #eeeeee;
+}
+/*Fim Body*/
+
+/*Footer*/
+footer{
+    background-color: #eeeeee;
+    font-size:small;
+    width:100%;
+}
+
+footer > div > p{
+    float: right;
+    padding-right: 15px;
+    border: 2px solid black;
+}
+/*Fim Footer*/
