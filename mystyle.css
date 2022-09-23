@@ -1,17 +1,53 @@
+/*General*/
+h1{
+    color:#05223c;
+    font-weight: bold;
+}
+.container-fluid{
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.row{
+    margin-top:20px !important;
+}
+/*End General*/
+
 /*Header*/
-header{
-    background-color: #000000;
+header > .navbar{
+    padding:0px;
+    border-top: 10px solid #747474;
+    border-bottom: 10px solid #747474;
+}
+
+.Header{
+    background-color: #747474;
+    padding: 0px;
+    margin: 0px;
 }
 
 #navbarSupportedContent{
     flex-grow: 0;
 }
-/*Dim Header*/
+
+.navbar-toggler{
+    margin-right: 12px;
+}
+.navbar-brand{
+    margin-left: 12px;
+}
+/*End Header*/
 
 /*Body*/
 .Destaques{
-    background-color: #eeeeee;
+    background-color: #b2b2b2;
+    margin-top: 0px;
 }
+
+#InitialRow{
+    margin-top: 0px !important;
+}
+
 #colorRed{
     color:red;
 }
@@ -21,13 +57,34 @@ header{
 }
 
 .Publishers{
-    background-color: #eeeeee;
+    background-color: #b2b2b2;
+}
+
+#Ordem > option,#Genero>option {
+    text-align: left; 
+}
+
+#Ordem,#Genero{
+    margin-right: 15px;
+    float:right;
+    border: 1px solid black;
+    color: #5b5b5b;
+    font-weight: bold;
+}
+
+#RowOfBtnPlusItens{
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+#buttonPlusItens{
+    float: right;
 }
 /*Fim Body*/
 
 /*Footer*/
 footer{
-    background-color: #eeeeee;
+    background-color: #b2b2b2;
     font-size:small;
     width:100%;
 }

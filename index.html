@@ -9,36 +9,34 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="mystyle.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <header>
     <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
+        <div class="container-fluid Header">
             <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page">Destaques</a>
                     </li>
+                    <a class="nav-link">|</a>
                     <li class="nav-item">
-                        <a class="nav-link">|</a>
+                        <a class="nav-link active">Lançamentos</a>
                     </li>
+                    <a class="nav-link">|</a>
                     <li class="nav-item">
-                        <a class="nav-link">Lançamentos</a>
+                        <a class="nav-link active">Plataformas</a>
                     </li>
+                    <a class="nav-link">|</a>
                     <li class="nav-item">
-                        <a class="nav-link">|</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Plataformas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">|</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Publishers</a>
+                        <a class="nav-link active">Publishers</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -53,17 +51,20 @@
 <body>
 
     <div class="container-fluid Destaques">
-        <div class="row">
+        <div class="row" id="InitialRow">
             <div class="col-12">
                 <h1>Destaques</h1>
-                <div class="row">
+                <div class="row" id="InitialRow">
                     <div class="col-12 col-sm-12 col-md-12">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                            </ol>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="row" style="margin-bottom: 35px;">
@@ -80,7 +81,12 @@
                                                 <h2>Nome do Jogo</h2>
                                             </div>
                                             <div>
-                                                <b>Sobre:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis assumenda nihil pariatur incidunt dicta, iste odit suscipit delectus quidem sint doloremque molestiae ad non. Recusandae, cum ut! Incidunt suscipit, non quo esse vero nesciunt deleniti ducimus. Numquam voluptates unde sed molestiae ut nemo eum, eius officiis delectus ullam dicta repellat!
+                                                <b>Sobre:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Officiis assumenda nihil pariatur incidunt dicta, iste odit suscipit
+                                                delectus quidem sint doloremque molestiae ad non. Recusandae, cum ut!
+                                                Incidunt suscipit, non quo esse vero nesciunt deleniti ducimus. Numquam
+                                                voluptates unde sed molestiae ut nemo eum, eius officiis delectus ullam
+                                                dicta repellat!
                                             </div>
                                             <div class="row">
                                                 <div class="col-6">
@@ -104,12 +110,12 @@
                                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
                                         data-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Previous</span>
+                                        <span class="sr-only"></span>
                                     </a>
                                     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
                                         data-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Next</span>
+                                        <span class="sr-only"></span>
                                     </a>
                                 </div>
                             </div>
@@ -119,112 +125,146 @@
             </div>
         </div>
     </div>
-            <div class="container-fluid Lancamento">
-                <div class="container">
-                    <h1>Lançamentos</h1>
-                    <div class="row">
-                        <div class="col-3">
-                            <img src="img/img1.jpg">
-                            <p>Legenda</p>
-                        </div>
-                        <div class="col-3">
-                            <img src="img/img1.jpg">
-                            <p>Legenda</p>
-                        </div>
-                        <div class="col-3">
-                            <img src="img/img1.jpg">
-                            <p>Legenda</p>
-                        </div>
-                        <div class="col-3">
-                            <img src="img/img1.jpg">
-                            <p>Legenda</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <img src="img/img1.jpg">
-                            <p>Legenda</p>
-                        </div>
-                        <div class="col-3">
-                            <img src="img/img1.jpg">
-                            <p>Legenda</p>
-                        </div>
-                        <div class="col-3">
-                            <img src="img/img1.jpg">
-                            <p>Legenda</p>
-                        </div>
-                    </div>
+    </div>
+    <div class="container-fluid Lancamento">
+        <div class="container">
+            <div class="row">
+            <div class="col-6">
+                <h1>Lançamentos</h1>
+            </div>
+            <div class="col-6">
+                <select class="btn btn-ligh" id=Ordem>
+                    <option>New</option>
+                    <option>Relevance</option>
+                    <option>Most Views</option>
+                </select>
+                <select class="btn btn-ligh" id=Genero>
+                    <option>All</option>
+                    <option>Action</option>
+                    <option>Adventure</option>
+                    <option>Indie</option>
+                    <option>Shooter</option>
+                </select>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-3">
+                    <img src="img/img1.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div class="col-3">
+                    <img src="img/img1.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div class="col-3">
+                    <img src="img/img1.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div class="col-3">
+                    <img src="img/img1.jpg">
+                    <p>Legenda</p>
                 </div>
             </div>
-            <div class="container-fluid Plataformas">
-                <div class="container">
-                    <h1>Plataformas</h1>
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="img/img1.jpg">
-                            <p>Legenda</p>
-                        </div>
-                        <div class="col-4">
-                            <img src="img/img1.jpg">
-                            <p>Legenda</p>
-                        </div>
-                        <div class="col-4">
-                            <img src="img/img1.jpg">
-                            <p>Legenda</p>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-3">
+                    <img src="img/img1.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div class="col-3">
+                    <img src="img/img1.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div class="col-3">
+                    <img src="img/img1.jpg">
+                    <p>Legenda</p>
                 </div>
             </div>
-            <div class="container-fluid Publishers">
-                <div class="container">
-                    <h1>Publishers</h1>
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="img/img1.jpg">
-                            <p>Legenda</p>
-                        </div>
-                        <div class="col-4">
-                            <img src="img/img1.jpg">
-                            <p>Legenda</p>
-                        </div>
-                        <div class="col-4">
-                            <img src="img/img1.jpg">
-                            <p>Legenda</p>
-                        </div>
-                    </div>
+            <div class="row" id="RowOfBtnPlusItens">
+                <div class="col-12">
+                  <button type="button" class="btn btn-secondary" id="buttonPlusItens">+ Carregar mais lançamentos</button>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="container-fluid Plataformas">
+        <div class="container">
+            <h1>Plataformas</h1>
+            <div class="row">
+                <div class="col-4">
+                    <img src="img/img1.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div class="col-4">
+                    <img src="img/img1.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div class="col-4">
+                    <img src="img/img1.jpg">
+                    <p>Legenda</p>
                 </div>
             </div>
-            <div class="container-fluid About">
-                <div class="container">
-                    <div class="row">
-                        <h1 class="col-7">Sobre</h1>
-                        <h1 class="col-5">Editorial</h1>
-                    </div>
-                    <div class="row">
-                        <div class="col-7">
-                            <img src="img/img1.jpg">
-                            <p>Legenda</p>
-                        </div>
+            <div class="row">
+                <div class="col-12" id="RowOfBtnPlusItens">
+                  <button type="button" class="btn btn-secondary" id="buttonPlusItens">+ Carregar mais lançamentos</button>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="container-fluid Publishers">
+        <div class="container">
+            <h1>Publishers</h1>
+            <div class="row">
+                <div class="col-4">
+                    <img src="img/img1.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div class="col-4">
+                    <img src="img/img1.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div class="col-4">
+                    <img src="img/img1.jpg">
+                    <p>Legenda</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="RowOfBtnPlusItens">
+                  <button type="button" class="btn btn-secondary" id="buttonPlusItens">+ Carregar mais lançamentos</button>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="container-fluid About">
+        <div class="container">
+            <div class="row">
+                <h1 class="col-7">Sobre</h1>
+                <h1 class="col-5">Editorial</h1>
+            </div>
+            <div class="row">
+                <div class="col-7">
+                    <img src="img/img1.jpg">
+                    <p>Legenda</p>
+                </div>
 
-                        <div class="col-5">
-                            <img src="img/img1.jpg">
-                            <p>Legenda</p>
-                        </div>
-                    </div>
+                <div class="col-5">
+                    <img src="img/img1.jpg">
+                    <p>Legenda</p>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- Optional JavaScript -->
-            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-                crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-                crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 <footer class="text-center p-3">
