@@ -3,13 +3,46 @@ h1{
     color:#05223c;
     font-weight: bold;
 }
+
+h4{
+    margin-top:3% !important;
+    color:#05223c;
+    font-weight: bold;
+}
+
 .container-fluid{
-    margin-top:50px;
-    margin-bottom:50px;
+    margin-top:4%;
+    margin-bottom:4%;
+}
+
+.col-4 > p{
+    margin-top:3%;
+    margin-bottom: 1%;
+}
+
+.col-4 > p > ol{
+    margin-bottom:1%;
 }
 
 .row{
-    margin-top:20px !important;
+    margin-top: 2% !important;
+}
+
+.col-12 > h1{
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container >.flex > div{
+    flex: 1 1 200px;
+    margin: 10px;
+    width:25%
 }
 /*End General*/
 
@@ -52,8 +85,8 @@ header > .navbar{
     color:red;
 }
 
-.col-12 > h1{
-    text-align: center;
+#VideosYout{
+    flex-wrap:wrap;
 }
 
 .Publishers{
@@ -65,7 +98,7 @@ header > .navbar{
 }
 
 #Ordem,#Genero{
-    margin-right: 15px;
+    margin-right: 4%;
     float:right;
     border: 1px solid black;
     color: #5b5b5b;
@@ -73,8 +106,8 @@ header > .navbar{
 }
 
 #RowOfBtnPlusItens{
-    margin-top:10px;
-    margin-bottom:20px;
+    margin-top:1%;
+    margin-bottom:2%;
 }
 
 #buttonPlusItens{
@@ -89,9 +122,8 @@ footer{
     width:100%;
 }
 
-footer > div > p{
+footer > div > img{
     float: right;
     padding-right: 15px;
-    border: 2px solid black;
 }
 /*Fim Footer*/
