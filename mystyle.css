@@ -65,9 +65,11 @@ header > .navbar{
 
 .navbar-toggler{
     margin-right: 12px;
+    float:right;
 }
 .navbar-brand{
     margin-left: 12px;
+    width: 40px;
 }
 /*End Header*/
 
