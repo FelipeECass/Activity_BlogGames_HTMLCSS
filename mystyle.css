@@ -5,14 +5,13 @@ h1{
 }
 
 h4{
-    margin-top:3% !important;
     color:#05223c;
     font-weight: bold;
 }
 
 .container-fluid{
     margin-top:4%;
-    margin-bottom:4%;
+    margin-bottom:2%;
 }
 
 .col-4 > p{
@@ -30,19 +29,6 @@ h4{
 
 .col-12 > h1{
     text-align: center;
-}
-
-.flex{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.container >.flex > div{
-    flex: 1 1 200px;
-    margin: 10px;
-    width:25%
 }
 /*End General*/
 
@@ -74,25 +60,18 @@ header > .navbar{
 /*End Header*/
 
 /*Body*/
-.Destaques{
-    background-color: #b2b2b2;
-    margin-top: 0px;
-}
+form.nosubmit {
+    border: none;
+    padding: 0;
+} 
 
-#InitialRow{
-    margin-top: 0px !important;
-}
-
-#colorRed{
-    color:red;
-}
-
-#VideosYout{
-    flex-wrap:wrap;
-}
-
-.Publishers{
-    background-color: #b2b2b2;
+input.nosubmit {
+    border-radius: 10px;
+    width: 98%;
+    border: 1px solid #555;
+    display: block;
+    padding: 9px 4px 9px 40px;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
 }
 
 #Ordem > option,#Genero>option {
@@ -107,17 +86,124 @@ header > .navbar{
     font-weight: bold;
 }
 
-#RowOfBtnPlusItens{
-    margin-top:1%;
-    margin-bottom:2%;
+#Games > div > img{
+    width:100%;
+    height: 250px;
 }
 
-#buttonPlusItens{
-    float: right;
+#Games > div{
+    margin-top: 2%;
+}
+
+#Games > div > a{
+    margin-top: 1.5%;
+    color:black;
+    text-decoration: none;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+#Games > div > a:hover{
+    color:gray;
+}
+
+#Publisher > div > img{
+    width:100%;
+    height: 250px;
+}
+
+#Desc > img{
+    height: 450px;
+}
+
+@media(max-width: 1200px){
+    #Games > div > img{
+        height: 180px;
+    }
+    #Publisher > div > img{
+        height: 180px;
+    }
+}
+
+@media(max-width: 1065px){
+    #Desc > img{
+        height: 450px;
+    }
+}
+
+@media(max-width: 990px){
+    #Desc > img{
+        height: 370px;
+    }
+}
+
+@media(max-width: 768px){
+    #Games > div > img{
+        height: 250px;
+    }
+    #Publisher > div > img{
+        height: 250px;
+    }
+    #Desc > img{
+        height: 270px;
+    }
+}
+
+@media(max-width: 610px){
+    #Desc > img{
+        height: 230px;
+    }
+}
+
+@media(max-width: 450px){
+    #Games > div > img{
+        height: 180px;
+    }
+    #Publisher > div > img{
+        height: 180px;
+    }
+    #Desc > img{
+        height: 180px;
+    }
+}
+
+@media(max-width: 350px){
+    #Desc > img{
+        height: 140px;
+    }
 }
 /*Fim Body*/
 
 /*Footer*/
+#About > div > div > div > #Ico{
+    width: 4%;
+}
+
+#About > div > div > div > #Social{
+    width: 6%;
+}
+
+@media(max-width: 990px){
+    #About > div > div > div > #Ico{
+        width: 6%;
+    }
+    #About > div > div > div > #Social{
+        width: 8%;
+    }
+}
+
+@media(max-width: 760px){
+    #About > div > div > div > #Ico{
+        width: 8%;
+    }
+    #About > div > div > div > #Social{
+        width: 10%;
+    }
+}
+
 footer{
     background-color: #b2b2b2;
     font-size:small;
